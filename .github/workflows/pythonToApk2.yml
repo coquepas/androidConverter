@@ -35,8 +35,8 @@ jobs:
         #uses: coquepas/buildozer@v1
         id: buildozer
         with:
-          #command: echo y | buildozer -v android debug
-          command: buildozer android debug
+          command: echo y | buildozer -v android debug
+          #command: buildozer android debug
           buildozer_version: master
 
       - name: Upload artifacts
