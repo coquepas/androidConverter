@@ -1,10 +1,5 @@
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
-  schedule:
-    - cron: '0 0 1,15 * *'
 
 jobs:
   build:
@@ -12,12 +7,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
-      - name: Get Date
-        id: get-date
-        run: |
-          echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
-        shell: bash
 
       - name: Cache Buildozer global directory
         uses: actions/cache@v2
@@ -41,7 +30,8 @@ jobs:
         with:
           command: echo y | buildozer -v android debug
           #command: buildozer android debug
-          buildozer_version: master
+          buildozer_version: stable
+          #buildozer_version: master
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
