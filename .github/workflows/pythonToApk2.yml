@@ -39,7 +39,7 @@ jobs:
         #uses: coquepas/buildozer@v1
         id: buildozer
         with:
-          command: echo y | python -m pip install cython==0.29.33 | buildozer -v android debug
+          command: echo y | buildozer -v android debug
           #command: buildozer android debug
           buildozer_version: master
 
