@@ -30,6 +30,10 @@ jobs:
           path: .buildozer
           key: ${{ runner.os }}-${{ steps.get-date.outputs.date }}-${{ hashFiles('buildozer.spec') }}
 
+      - name: Install python cython version
+        run: 
+          python -m pip install cython==0.29.33
+
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
         #uses: coquepas/buildozer@v1
