@@ -35,9 +35,9 @@ version = 0.1
 #version.filename = %(source.dir)s/__init__.py
 
 # (list) Application requirements
-# comma separated e.g. requirements = sqlite3,kivy
+# comma separated e.g. requirements = sqlite3,kivy==2.2.0
 
-requirements = python3,flask,Cython==0.29.33
+requirements = python3,flask,Cython==0.29.33,pyjnius
 
 
 # (str) Custom source folders for requirements

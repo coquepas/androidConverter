@@ -1,5 +1,6 @@
 from flask import Flask, redirect
-
+from android.permissions import request_permissions, Permission
+request_permissions([Permission.WRITE_EXTERNAL_STORAGE])
 
 app = Flask(__name__)
 
