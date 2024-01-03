@@ -37,7 +37,7 @@ version = 0.1
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy==2.2.0,Cython=0.29.33
 
-requirements = python3,flask,pyjnius,Werkzeug==2.3.7,pillow
+requirements = python3,flask,pyjnius,werkzeug==2.3.7,pillow
 
 
 # (str) Custom source folders for requirements
