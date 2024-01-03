@@ -31,7 +31,7 @@ jobs:
         id: buildozer
         with:
           #repository_root: master
-          workdir: app
+          #workdir: app
           buildozer_version: stable
           command: buildozer -v android debug
 
