@@ -4,7 +4,7 @@
 title = appDemo
 
 # (str) Package name
-package.name = app
+package.name = fuelTracker
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.coque
@@ -48,7 +48,7 @@ requirements = python3,flask,Cython==0.29.33,kivy==2.2.0
 #presplash.filename = %(source.dir)s/data/presplash.png
 
 # (str) Icon of the application
-#icon.filename = %(source.dir)s/data/icon.png
+icon.filename = data/icon.png
 
 # (str) Supported orientation (one of landscape, sensorLandscape, portrait or all)
 orientation = portrait
