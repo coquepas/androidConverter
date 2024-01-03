@@ -25,7 +25,7 @@ jobs:
         id: buildozer
         with:
           #solo especificar el workdir si no está el main.py en el root
-          workdir: app/..
+          workdir: app
           buildozer_version: stable
           #command: echo y | buildozer -v android debug
 
