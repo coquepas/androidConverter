@@ -23,7 +23,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          path: master
+          path: .buildozer_global
+          key: buildozer-global-${{ hashFiles('app/buildozer.spec') }} # Replace with your path
 
       - name: Build with Buildozer
         uses: ArtemSBulgakov/buildozer-action@v1
