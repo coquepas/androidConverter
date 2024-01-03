@@ -31,7 +31,7 @@ source.include_exts = py,png,jpg,kv,atlas
  version = 0.1
 
 # (str) Application versioning (method 2)
-#version.regex = __version__ = ['"]([0-9.][0-9]*).*['"]
+version.regex = __version__ = ['"]([0-9.][0-9]*).*['"]
 #version.filename = %(source.dir)s/__init__.py
 
 # (list) Application requirements
