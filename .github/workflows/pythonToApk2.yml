@@ -33,5 +33,13 @@ jobs:
           name: package
           path: ${{ steps.buildozer.outputs.filename }}
 
+       - name: Commit apk
+         run: |
+           git checkout data
+           git config --global user.name 'coquepas'
+           git config --global user.email 'coquepas@users.noreply.github.com'
+           git commit -am "Automated push"
+           git push
+
 
 
