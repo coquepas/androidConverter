@@ -30,9 +30,9 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
-          repository_root: master
+          #repository_root: master
           workdir: app
-          buildozer_version: master
+          buildozer_version: stable
           command: buildozer -v android debug
 
       - name: Upload artifacts
