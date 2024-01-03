@@ -37,7 +37,7 @@ version.filename = %(source.dir)s/__init__.py
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 
-requirements = python3,kivy,flask
+requirements = python3,flask,Cython==0.29.33,kivy==2.2.0
 
 
 # (str) Custom source folders for requirements
@@ -260,7 +260,7 @@ android.allow_backup = True
 #p4a.fork = kivy
 
 # (str) python-for-android branch to use, defaults to master
-#p4a.branch = master
+p4a.branch = release-2022.12.20
 
 
 # (str) python-for-android git clone directory (if empty, it will be automatically cloned from github)
