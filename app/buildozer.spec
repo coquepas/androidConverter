@@ -4,7 +4,7 @@
 title = appDemo
 
 # (str) Package name
-package.name = coque_demo
+package.name = app
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.coque
@@ -31,8 +31,8 @@ source.include_exts = py,png,jpg,kv,atlas
  version = 0.1
 
 # (str) Application versioning (method 2)
-version.regex = __version__ = ['"]([0-9.][0-9]*).*['"]
-version.filename = %(source.dir)s/__init__.py
+#version.regex = __version__ = ['"]([0-9.][0-9]*).*['"]
+#version.filename = %(source.dir)s/__init__.py
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
@@ -231,7 +231,7 @@ fullscreen = 0
 #android.copy_libs = 1
 
 # (str) The Android arch to build for, choices: armeabi-v7a, arm64-v8a, x86, x86_64
-android.arch = armeabi-v7a
+android.arch = arm64-v8a
 
 # (int) overrides automatic versionCode computation (used in build.gradle)
 # this is not the same as app version and should only be edited if you know what you're doing

@@ -32,7 +32,7 @@ jobs:
           repository_root: master
           workdir: app
           buildozer_version: master
-          #command: buildozer -v android debug
+          command: buildozer -v android debug
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
